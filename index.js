@@ -588,7 +588,6 @@ function querry(pixels,x){
                         opacity:1,
                         duration: 0.5,
                         stagger: 0.3,
-                        delay: 0.7,
                         ease: "Power1.easeInOut"
                     });
                 }else{
