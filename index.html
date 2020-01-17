@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portfolio</title>
+    <link rel="shortcut icon" href="images/portolio-favicon@2x.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat:400,500i,600,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="index.js" defer ></script>
+
+</head>
+
+<body> 
+    <div class="loading">
+        <div class="profile">
+            <img src="images/profile@3x.png" alt='srigiri siva sai'>
+        </div>
+        <div class="loader">
+            <div class="bar-container">
+                <div class="load"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="overlay"></div>
+        <nav class="sidenav">
+            <ul>
+                <li class="nav-li active"><a href="#home" class="nav-links">HOME</a></li>
+                <li class="nav-li"><a href="#skills" class="nav-links">Skills</a></li>
+                <li class="nav-li"><a href="#portfolio" class="nav-links">work</a></li>
+                <li class="nav-li"><a href="#contact" class="nav-links">CONTACT</a></li>
+                <li class="link-slide"></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="https://www.facebook.com/shiva.sirigiri" target="_blank" class="links">
+                    <div class="icons fb">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24">
+                            <path
+                                d="M12.148 13.398l.674-4.31H8.607V6.29c0-1.18.589-2.329 2.477-2.329H13V.291S11.26 0 9.598 0c-3.47 0-5.74 2.064-5.74 5.802v3.285H0v4.311h3.858v10.42a15.595 15.595 0 0 0 4.75 0v-10.42h3.54" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/sirigiri-siva-sai-b92841171/" target="_blank"  class="links">
+                    <div class="icons linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                            <path
+                                d="M23 14.1V23h-4.93v-8.303c0-2.085-.713-3.508-2.497-3.508-1.363 0-2.173.958-2.53 1.886-.13.332-.163.793-.163 1.258V23H7.949s.066-14.063 0-15.519h4.931v2.2c-.01.016-.024.033-.032.05h.032v-.05c.655-1.056 1.824-2.564 4.443-2.564C20.568 7.117 23 9.334 23 14.1zM2.79 0C1.103 0 0 1.158 0 2.681c0 1.49 1.072 2.682 2.725 2.682h.033c1.72 0 2.789-1.192 2.789-2.682C5.514 1.158 4.477 0 2.79 0zM.293 23h4.93V7.481H.292V23z" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/shivasirigiri/" target="_blank"  class="links">
+                    <div class="icons insta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                            <path
+                                d="M12.36 0c2.055.004 2.482.02 3.516.068 1.196.054 2.013.244 2.728.522a5.51 5.51 0 0 1 1.991 1.297 5.51 5.51 0 0 1 1.297 1.99c.278.716.468 1.533.522 2.73.05 1.074.065 1.493.067 3.768v1.731c-.002 2.276-.018 2.695-.067 3.77-.054 1.196-.244 2.013-.522 2.728a5.51 5.51 0 0 1-1.297 1.991 5.51 5.51 0 0 1-1.99 1.297c-.716.278-1.533.468-2.73.522-1.074.05-1.493.065-3.769.067h-1.73c-2.276-.002-2.695-.018-3.77-.067-1.196-.054-2.013-.244-2.728-.522a5.51 5.51 0 0 1-1.991-1.297 5.51 5.51 0 0 1-1.297-1.99c-.278-.716-.468-1.533-.522-2.73C.02 14.843.004 14.416 0 12.362v-2.24C.004 8.067.02 7.64.068 6.606.122 5.41.312 4.593.59 3.878a5.51 5.51 0 0 1 1.297-1.991A5.51 5.51 0 0 1 3.877.59C4.594.312 5.41.122 6.608.068 7.64.02 8.066.004 10.12 0zm-.019 2.026h-2.2c-2.015.003-2.42.018-3.442.065-1.096.05-1.692.233-2.088.387-.524.204-.899.447-1.292.84a3.482 3.482 0 0 0-.841 1.293c-.154.396-.337.992-.387 2.088-.047 1.021-.062 1.427-.065 3.442v2.2c.003 2.015.018 2.42.065 3.442.05 1.096.233 1.691.387 2.087.204.525.448.9.84 1.293.394.393.769.637 1.293.84.396.155.992.338 2.088.388 1.103.05 1.487.064 3.957.065h1.17c2.47-.001 2.854-.015 3.957-.065 1.096-.05 1.691-.233 2.087-.387.525-.204.9-.448 1.293-.841.393-.393.637-.768.84-1.293.155-.396.338-.99.388-2.087.05-1.103.064-1.488.065-3.958v-1.168c-.001-2.47-.015-2.855-.065-3.958-.05-1.096-.233-1.692-.387-2.088a3.482 3.482 0 0 0-.841-1.292 3.482 3.482 0 0 0-1.293-.841c-.396-.154-.99-.337-2.087-.387-1.022-.047-1.427-.062-3.442-.065zm-1.1 3.443a5.772 5.772 0 1 1 0 11.544 5.772 5.772 0 0 1 0-11.544zm0 2.025a3.747 3.747 0 1 0 0 7.494 3.747 3.747 0 0 0 0-7.494zm6-3.602a1.349 1.349 0 1 1 0 2.697 1.349 1.349 0 0 1 0-2.697z"
+                                opacity=".54" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://github.com/sivaSai9177?tab=repositories"target="_blank"  class="links">
+                    <div class="icons github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+                            <path
+                                d="M12.211.267C5.616.267.267 5.615.267 12.213c0 5.277 3.422 9.754 8.169 11.334.598.11.815-.259.815-.576 0-.283-.01-1.034-.016-2.03-3.322.72-4.023-1.603-4.023-1.603-.544-1.38-1.327-1.747-1.327-1.747-1.085-.74.082-.726.082-.726 1.2.084 1.83 1.231 1.83 1.231 1.065 1.825 2.796 1.298 3.476.992.109-.771.418-1.298.759-1.596-2.653-.301-5.442-1.327-5.442-5.904 0-1.304.466-2.371 1.23-3.206-.123-.302-.533-1.517.118-3.16 0 0 1.002-.322 3.284 1.224a11.442 11.442 0 0 1 2.99-.403c1.016.005 2.037.137 2.991.403 2.28-1.546 3.282-1.225 3.282-1.225.652 1.644.242 2.86.12 3.161.765.835 1.227 1.902 1.227 3.206 0 4.59-2.793 5.599-5.454 5.894.428.37.81 1.098.81 2.213 0 1.596-.014 2.885-.014 3.276 0 .32.215.692.821.575 4.743-1.583 8.163-6.057 8.163-11.333C24.158 5.615 18.809.267 12.21.267" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <header>
+            <div class="top">
+                <div class="logo">
+                   <a href="#home" id="logo-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    viewBox="0 0 87 26">
+                    <defs>
+                        <path id="a"
+                            d="M6.358 25.272c3.672 0 5.576-2.176 5.576-5.984 0-2.72-.986-4.692-4.114-7.446C5.372 9.7 4.624 8.408 4.624 6.674c0-1.7.68-2.346 1.87-2.346s1.87.646 1.87 2.346v.986H11.9v-.748c0-3.808-1.87-5.984-5.508-5.984S.884 3.104.884 6.912c0 2.72.986 4.692 4.114 7.446 2.448 2.142 3.196 3.434 3.196 5.168 0 1.7-.748 2.312-1.938 2.312s-1.938-.612-1.938-2.312v-1.7H.782v1.462c0 3.808 1.904 5.984 5.576 5.984zM18.288 25V1.2h-3.74V25h3.74zm11.454 0l3.672-23.8H29.98l-2.822 19.414h-.068L24.268 1.2h-3.774L24.166 25h5.576zm7.477 0l.646-4.318h4.59L43.1 25h3.774L43.067 1.2h-5.474L33.785 25h3.434zm4.726-7.548H38.34l1.768-12.036h.068l1.768 12.036zm17.876 7.82c3.672 0 5.576-2.176 5.576-5.984 0-2.72-.986-4.692-4.114-7.446-2.448-2.142-3.196-3.434-3.196-5.168 0-1.7.68-2.346 1.87-2.346s1.87.646 1.87 2.346v.986h3.536v-.748c0-3.808-1.87-5.984-5.508-5.984s-5.508 2.176-5.508 5.984c0 2.72.986 4.692 4.114 7.446 2.448 2.142 3.196 3.434 3.196 5.168 0 1.7-.748 2.312-1.938 2.312s-1.938-.612-1.938-2.312v-1.7h-3.536v1.462c0 3.808 1.904 5.984 5.576 5.984zM70.46 25l.646-4.318h4.59L76.341 25h3.774L76.307 1.2h-5.474L67.025 25h3.434zm4.726-7.548h-3.604L73.35 5.416h.068l1.768 12.036zM86.062 25V1.2h-3.74V25h3.74z" />
+                    </defs>
+                    <g>
+                        <use xlink:href="#a" />
+                        <use xlink:href="#a" />
+                    </g>
+                </svg>
+
+                   </a>
+                </div>
+                <div class="social">
+                    <svg class="ham line" viewBox="0 0 100 100">
+                        <path class="line top"
+                            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                        <path class="line middle" d="m 30,50 h 40" />
+                        <path class="line bottom"
+                            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                    </svg>
+                    <a href="https://www.facebook.com/shiva.sirigiri" target="_blank" class="links">
+                        <div class="icons fb">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24">
+                                <path
+                                    d="M12.148 13.398l.674-4.31H8.607V6.29c0-1.18.589-2.329 2.477-2.329H13V.291S11.26 0 9.598 0c-3.47 0-5.74 2.064-5.74 5.802v3.285H0v4.311h3.858v10.42a15.595 15.595 0 0 0 4.75 0v-10.42h3.54" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sirigiri-siva-sai-b92841171/" target="_blank"  class="links">
+                        <div class="icons linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                <path
+                                    d="M23 14.1V23h-4.93v-8.303c0-2.085-.713-3.508-2.497-3.508-1.363 0-2.173.958-2.53 1.886-.13.332-.163.793-.163 1.258V23H7.949s.066-14.063 0-15.519h4.931v2.2c-.01.016-.024.033-.032.05h.032v-.05c.655-1.056 1.824-2.564 4.443-2.564C20.568 7.117 23 9.334 23 14.1zM2.79 0C1.103 0 0 1.158 0 2.681c0 1.49 1.072 2.682 2.725 2.682h.033c1.72 0 2.789-1.192 2.789-2.682C5.514 1.158 4.477 0 2.79 0zM.293 23h4.93V7.481H.292V23z" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/shivasirigiri/" target="_blank"  class="links">
+                        <div class="icons insta">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                <path
+                                    d="M12.36 0c2.055.004 2.482.02 3.516.068 1.196.054 2.013.244 2.728.522a5.51 5.51 0 0 1 1.991 1.297 5.51 5.51 0 0 1 1.297 1.99c.278.716.468 1.533.522 2.73.05 1.074.065 1.493.067 3.768v1.731c-.002 2.276-.018 2.695-.067 3.77-.054 1.196-.244 2.013-.522 2.728a5.51 5.51 0 0 1-1.297 1.991 5.51 5.51 0 0 1-1.99 1.297c-.716.278-1.533.468-2.73.522-1.074.05-1.493.065-3.769.067h-1.73c-2.276-.002-2.695-.018-3.77-.067-1.196-.054-2.013-.244-2.728-.522a5.51 5.51 0 0 1-1.991-1.297 5.51 5.51 0 0 1-1.297-1.99c-.278-.716-.468-1.533-.522-2.73C.02 14.843.004 14.416 0 12.362v-2.24C.004 8.067.02 7.64.068 6.606.122 5.41.312 4.593.59 3.878a5.51 5.51 0 0 1 1.297-1.991A5.51 5.51 0 0 1 3.877.59C4.594.312 5.41.122 6.608.068 7.64.02 8.066.004 10.12 0zm-.019 2.026h-2.2c-2.015.003-2.42.018-3.442.065-1.096.05-1.692.233-2.088.387-.524.204-.899.447-1.292.84a3.482 3.482 0 0 0-.841 1.293c-.154.396-.337.992-.387 2.088-.047 1.021-.062 1.427-.065 3.442v2.2c.003 2.015.018 2.42.065 3.442.05 1.096.233 1.691.387 2.087.204.525.448.9.84 1.293.394.393.769.637 1.293.84.396.155.992.338 2.088.388 1.103.05 1.487.064 3.957.065h1.17c2.47-.001 2.854-.015 3.957-.065 1.096-.05 1.691-.233 2.087-.387.525-.204.9-.448 1.293-.841.393-.393.637-.768.84-1.293.155-.396.338-.99.388-2.087.05-1.103.064-1.488.065-3.958v-1.168c-.001-2.47-.015-2.855-.065-3.958-.05-1.096-.233-1.692-.387-2.088a3.482 3.482 0 0 0-.841-1.292 3.482 3.482 0 0 0-1.293-.841c-.396-.154-.99-.337-2.087-.387-1.022-.047-1.427-.062-3.442-.065zm-1.1 3.443a5.772 5.772 0 1 1 0 11.544 5.772 5.772 0 0 1 0-11.544zm0 2.025a3.747 3.747 0 1 0 0 7.494 3.747 3.747 0 0 0 0-7.494zm6-3.602a1.349 1.349 0 1 1 0 2.697 1.349 1.349 0 0 1 0-2.697z"
+                                    opacity=".54" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://github.com/sivaSai9177?tab=repositories"target="_blank"  class="links">
+                        <div class="icons github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+                                <path
+                                    d="M12.211.267C5.616.267.267 5.615.267 12.213c0 5.277 3.422 9.754 8.169 11.334.598.11.815-.259.815-.576 0-.283-.01-1.034-.016-2.03-3.322.72-4.023-1.603-4.023-1.603-.544-1.38-1.327-1.747-1.327-1.747-1.085-.74.082-.726.082-.726 1.2.084 1.83 1.231 1.83 1.231 1.065 1.825 2.796 1.298 3.476.992.109-.771.418-1.298.759-1.596-2.653-.301-5.442-1.327-5.442-5.904 0-1.304.466-2.371 1.23-3.206-.123-.302-.533-1.517.118-3.16 0 0 1.002-.322 3.284 1.224a11.442 11.442 0 0 1 2.99-.403c1.016.005 2.037.137 2.991.403 2.28-1.546 3.282-1.225 3.282-1.225.652 1.644.242 2.86.12 3.161.765.835 1.227 1.902 1.227 3.206 0 4.59-2.793 5.599-5.454 5.894.428.37.81 1.098.81 2.213 0 1.596-.014 2.885-.014 3.276 0 .32.215.692.821.575 4.743-1.583 8.163-6.057 8.163-11.333C24.158 5.615 18.809.267 12.21.267" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="particle-section">
+            <div class="wishings">
+                <span>Hello! <span class="msg"></span> 👋 </span>
+            </div>
+            <div class="sections">
+                <section id="home" class="home current-slide">
+                    <div id="particles-home-js" class="particles"></div>
+                    <div class="section-wrapper">
+                        <div class="left left-anime gsap">
+                            <div class="text-wrapper">
+                                <h1>
+                                    <span> Hello I am </span><br>SIRIGIRI SIVA SAI
+                                </h1>
+                                <div class="tag">
+                                    <h3>web Developer</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right right-anime gsap">
+                              <div class="image-wrapper">
+                                <img src="images/illustrartion@3x.png" alt="myPic">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills" class="skills">
+                    <div id="particles-skills-js" class="particles"></div>
+                    <div class="section-wrapper">
+                        <header class="gsap">
+                            <h2>MY SKILLS</h2>
+                        </header>
+                        <div class="work-section">
+                            <div class="up">
+                                <div class="experties-cards">
+                                    <div class="card left-anime gsap">
+                                        <div class="card-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42"
+                                                viewBox="0 0 42 42">
+                                                <path fill-rule="nonzero"
+                                                    d="M14.75 20.48a2.605 2.605 0 0 0 0 5.207 2.605 2.605 0 0 0 0-5.208zm12.5 0a2.605 2.605 0 0 0 0 5.207 2.605 2.605 0 0 0 0-5.208zM21 .166C9.5.167.167 9.5.167 21 .167 32.5 9.5 41.833 21 41.833c11.5 0 20.833-9.333 20.833-20.833C41.833 9.5 32.5.167 21 .167zm0 37.5c-9.188 0-16.667-7.48-16.667-16.667 0-.604.042-1.208.104-1.792A20.962 20.962 0 0 0 15.293 8.021c3.77 5.333 9.979 8.812 17 8.812 1.625 0 3.187-.187 4.687-.541.438 1.479.688 3.062.688 4.708 0 9.188-7.48 16.667-16.667 16.667z" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="card-content">
+                                            <h4>Interpersonal Skills</h4>
+                                            <span class="card-para">I am confident at my work and I can have good
+                                                interaction with
+                                                Team.</span>
+                                        </div>
+                                    </div>
+                                    <div class="card right-anime gsap">
+                                        <div class="card-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                                                viewBox="0 0 38 38">
+                                                <path fill-rule="nonzero"
+                                                    d="M33.583.25H4.417A4.179 4.179 0 0 0 .25 4.417v29.166a4.179 4.179 0 0 0 4.167 4.167h29.166a4.179 4.179 0 0 0 4.167-4.167V4.417A4.179 4.179 0 0 0 33.583.25zM12.75 29.417H8.583V14.833h4.167v14.584zm8.333 0h-4.166V8.583h4.166v20.834zm8.334 0H25.25v-8.334h4.167v8.334z" />
+                                            </svg>
+                                        </div>
+                                        <div class="card-content">
+                                            <h4>Analytical Skill</h4>
+                                            <span class="card-para">I have ability to gather information, visualize and
+                                                solve complex as well as simple problems</span>
+                                        </div>
+                                    </div>
+                                    <div class="card left-anime gsap">
+                                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="42"
+                                                height="42" viewBox="0 0 42 42">
+                                                <path fill-rule="nonzero"
+                                                    d="M40.052 27.236a1.914 1.914 0 0 0-1.564.819c-.84.107-1.545-.065-1.975-.82v-3.52a1.638 1.638 0 0 0-1.627-1.648h-2.235c.121.358.184.733.184 1.11a3.4 3.4 0 0 1-3.36 3.44 3.4 3.4 0 0 1-3.43-3.44c0-.378.063-.752.185-1.11h-2.236a1.638 1.638 0 0 0-1.626 1.648v3.52c-.444.78-1.183.937-2.058.807a1.907 1.907 0 0 0-1.482-.718 1.95 1.95 0 0 0-1.92 1.98 1.95 1.95 0 0 0 1.92 1.926 1.914 1.914 0 0 0 1.565-.82c.839-.105 1.545.065 1.975.82v3.52a1.638 1.638 0 0 0 1.626 1.648h3.634c.589.456.708 1.143.594 1.943a1.933 1.933 0 0 0-.261 2.715 1.92 1.92 0 0 0 2.707.262 1.934 1.934 0 0 0-.108-3.06c-.095-.765.035-1.418.603-1.86h3.724a1.638 1.638 0 0 0 1.627-1.648v-3.52c.444-.778 1.182-.936 2.057-.806.36.452.905.716 1.481.719A1.95 1.95 0 0 0 42 29.189a1.95 1.95 0 0 0-1.948-1.953zm-24.888 2.097a3.418 3.418 0 0 1 3.395-3.44c.373 0 .744.063 1.096.187v-2.266a1.638 1.638 0 0 0-1.626-1.649h-3.475c-.77-.45-.924-1.198-.797-2.084.82-.678.937-1.893.261-2.715a1.92 1.92 0 0 0-2.707-.262 1.933 1.933 0 0 0 .109 3.06c.105.85-.064 1.566-.809 2.001H7.135a1.638 1.638 0 0 0-1.627 1.648v3.683c-.45.596-1.127.718-1.916.601a1.907 1.907 0 0 0-1.482-.718 1.95 1.95 0 0 0-1.921 1.98 1.95 1.95 0 0 0 1.92 1.926 1.913 1.913 0 0 0 1.565-.82c.754-.096 1.399.037 1.834.612v3.773a1.638 1.638 0 0 0 1.627 1.648h3.475c.77.45.924 1.198.796 2.085a1.933 1.933 0 0 0-.26 2.715c.675.822 1.887.94 2.707.262a1.933 1.933 0 0 0-.11-3.06c-.104-.85.065-1.566.81-2.002h3.474a1.638 1.638 0 0 0 1.627-1.648v-2.265a3.353 3.353 0 0 1-1.096.187 3.418 3.418 0 0 1-3.394-3.44zM11.33.644a1.919 1.919 0 0 1 2.707.262 1.932 1.932 0 0 1-.262 2.715c-.114.8.006 1.486.595 1.942h3.634l.141.007c.837.076 1.49.784 1.486 1.641v3.522c.43.755 1.135.924 1.975.82.357-.513.94-.818 1.564-.82a1.95 1.95 0 0 1 1.91 1.916 1.95 1.95 0 0 1-1.91 1.99 1.907 1.907 0 0 1-1.482-.719c-.875-.13-1.613.028-2.057.807v3.52a1.637 1.637 0 0 1-1.627 1.649h-2.236a3.4 3.4 0 0 0-3.207-4.511 3.4 3.4 0 0 0-3.398 3.4c0 .378.063.753.184 1.11H7.113a1.638 1.638 0 0 1-1.627-1.648v-3.52c-.43-.755-1.135-.925-1.974-.82a1.915 1.915 0 0 1-1.565.82A1.95 1.95 0 0 1 0 12.774a1.95 1.95 0 0 1 1.947-1.953 1.906 1.906 0 0 1 1.482.718c.875.13 1.613-.027 2.057-.806V7.212a1.638 1.638 0 0 1 1.627-1.649h3.722c.568-.44.699-1.094.604-1.858a1.933 1.933 0 0 1-.109-3.06zM29.509 16c.428 0 .783.142 1.066.426.283.284.425.639.425 1.064 0 .426-.142.784-.425 1.075-.283.29-.638.435-1.066.435-.44 0-.801-.145-1.084-.435A1.48 1.48 0 0 1 28 17.49c0-.425.142-.78.425-1.064.283-.284.644-.426 1.084-.426zm-.732-12c1.592 0 2.86.338 3.805 1.015C33.527 5.69 34 6.622 34 7.808c0 .571-.096 1.073-.288 1.506a4.128 4.128 0 0 1-.693 1.098c-.27.3-.625.645-1.066 1.036-.54.474-.941.892-1.204 1.255-.263.363-.394.795-.394 1.297h-2.708l.007-.246c.034-.644.206-1.186.516-1.626.348-.496.856-1.036 1.524-1.622.511-.446.892-.833 1.14-1.16.249-.329.373-.702.373-1.12 0-.586-.241-1.06-.724-1.423-.484-.362-1.13-.544-1.94-.544-1.535 0-2.694.537-3.475 1.611L23 6.552l.189-.24a5.988 5.988 0 0 1 2.177-1.653C26.333 4.219 27.47 4 28.777 4z" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="card-content">
+                                            <h4>Problem Solving</h4>
+                                            <span class="card-para">I can solve the problems with the patience and a healthy research</span>
+                                        </div>
+                                    </div>
+                                    <div class="card right-anime gsap">
+                                        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                                height="46" viewBox="0 0 48 46">
+                                                <path fill-rule="evenodd"
+                                                    d="M35.436 0a4.252 4.252 0 0 1 4.256 4.247A4.255 4.255 0 0 1 35.436 8.5c-.329 0-.642-.05-.947-.125l-.227-.06-3.523 5.922a11.012 11.012 0 0 1 4.327 8.272l4.633.444c.608-1.578 2.168-2.713 4.01-2.713 2.37 0 4.291 1.855 4.291 4.143 0 2.283-1.921 4.137-4.291 4.137-2.067 0-3.778-1.416-4.185-3.298l-.037-.196-4.525-.428c-.61 4.202-3.591 7.634-7.55 8.909l.87 3.916c2.232.07 4.026 1.954 4.026 4.284 0 2.37-1.861 4.293-4.152 4.293-2.3 0-4.156-1.923-4.156-4.293 0-1.582.833-2.947 2.065-3.691l.179-.103-.876-3.956c-.449.055-.905.083-1.369.083a11.08 11.08 0 0 1-10.086-6.471l-5.096 1.717c.01.098.03.195.03.297 0 2.462-1.98 4.457-4.426 4.457C1.977 34.04 0 32.045 0 29.583c0-2.461 1.977-4.45 4.421-4.45 1.467 0 2.77.722 3.573 1.832l.13.188 5.07-1.712a11.048 11.048 0 0 1-.27-2.442c0-2.422.783-4.663 2.113-6.484l-1.928-1.867a4.222 4.222 0 0 1-2.297.687c-2.403 0-4.35-1.993-4.35-4.445 0-2.459 1.947-4.45 4.35-4.45 2.402 0 4.348 1.991 4.348 4.45 0 .687-.17 1.33-.446 1.91l-.108.215 1.91 1.848a11.056 11.056 0 0 1 7.483-2.903c1.77 0 3.441.413 4.924 1.147l3.492-5.87a4.246 4.246 0 0 1-1.23-2.99c0-2.35 1.9-4.247 4.251-4.247zM24 23.901c-2.333 0-6.965 1.229-7 3.47C18.505 29.559 21.083 31 24 31s5.495-1.442 7-3.628c-.035-2.242-4.678-3.47-7-3.47zM24 15c-1.937 0-3.5 1.51-3.5 3.38 0 1.87 1.563 3.38 3.5 3.38s3.5-1.51 3.5-3.38c0-1.87-1.563-3.38-3.5-3.38z" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="card-content">
+                                            <h4>Team Work</h4>
+                                            <span class="card-para">I can collabrate with the team in no time, i  hope so looking forward to work with team</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-bars">
+                                    <ul class="bar-text">
+                                        <li class="gsap">HTML5</li>
+                                        <li class="gsap">CSS3</li>
+                                        <li class="gsap">Javascript</li>
+                                        <li class="gsap">Bootstrap</li>
+                                        <li class="gsap">Angular</li>
+                                        <li class="gsap">Ajax</li>
+                                    </ul>
+                                    <ul class="bars">
+                                        <li class="progress-bars">
+                                            <div class="bar html"></div>
+                                        </li>
+                                        <li class="progress-bars">
+                                            <div class="bar css "></div>
+                                        </li>
+                                        <li class="progress-bars">
+                                            <div class="bar javascript"></div>
+                                        </li>
+                                        <li class="progress-bars">
+                                            <div class="bar bootstrap"></div>
+                                        </li>
+                                        <li class="progress-bars">
+                                            <div class="bar angular"></div>
+                                        </li>
+                                        <li class="progress-bars">
+                                            <div class="bar ajax"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section id="portfolio" class="portfolio">
+                    <div id="particles-portfolio-js"class="particles"></div>
+                    <div class="section-wrapper">
+                        <header class="gsap">
+                            <h2>WORK</h2>
+                            <p>Done some projects with my experience and knowledge kindly take a look 
+                            </p>
+                        </header>
+                        <div class="work-section">
+                            <div class="projects">
+                                    <div class="row">
+                                        <a href="https://determined-austin-c60804.netlify.com/" target="_blank" class="card left-anime gsap">
+                                            <div class="box">
+                                                <img src="images/gallery-mockup@3x.png" alt="calculator">
+                                            </div>
+                                            <h2>Image Gallery</h2>
+                                        </a>
+                                        <a href="https://sivasai9177.github.io/calciFinal/" class="card right-anime gsap" target="_blank">
+                                            <div class="box">
+                                                <img src="images/calculator@3x.png" alt="calculator">
+                                            </div>
+                                            <h2>Calculator</h2>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="https://sivasai9177.github.io/budget/" class="card left-anime gsap" target="_blank">
+                                            <div class="box">
+                                                <img src="images/budget@3x.png" alt="calculator">
+                                            </div>
+                                            <h2>Budject App</h2>
+                                        </a>
+                                        <a href="https://stoic-brown-bd9959.netlify.com/" class="card right-anime gsap" target="_blank">
+                                            <div class="box">
+                                                <img src="images/flybuy@3x.png" alt="calculator">
+                                            </div>
+                                            <h2>E-Commerce <span> Wireframe </span></h2>
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="contact" class="contact">
+                    <div id="particles-js" class="particles"></div>
+                    <div class="section-wrapper">
+                        <header class="gsap">
+                            <h2>Hire Me</h2>
+                        </header>
+                        <div class="work-section">
+                            <div class="left left-anime gsap">
+                                <div class="circle"></div>
+                                <div class="image-wrapper">
+                                    <img src="images/standing@3x.png" alt="myPic">
+                                </div>
+                            </div>
+                            <div class="right right-anime gsap">
+                                <div class="contact-card">
+                                    <div class="call">
+                                        Mail Me !
+                                    </div>
+                                    <div class="email">
+                                        <div class="emailIcon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="20" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                                    class="changeColor" />
+                                                <path d="M0 0h24v24H0z" fill="none" /></svg></div>
+                                        <h3>email</h3>
+                                    </div>
+                                    <a href="mailto:sirigirisiva1@gmail.com">sirigirisiva1@gmail.com</a>
+                                </div>
+                                <div class="contact-card">
+                                    <div class="call">
+                                        Feel Free to Call !
+                                    </div>
+                                    <div class="mobile">
+                                        <div class="iphoneIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"
+                                                    class="changeColor" />
+                                                <path d="M0 0h24v24H0z" fill="none" />
+                                            </svg>
+                                        </div>
+                                        <h3>mobile</h3>
+                                    </div>
+                                    <a class="phone-num">+91 9177777922</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="bottom">
+                <div class="theme-mode">
+                    <div class="btns">
+                        <div class="light li active">
+                            <h3>light</h3>
+                        </div>
+                        <div class="dark li">
+                            <h3>dark</h3>
+                        </div>
+                        <div class="slide"></div>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="mouse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <g fill="#3C3C43" fill-opacity=".6" fill-rule="evenodd">
+                                <path d="M12 1a6.5 6.5 0 0 0-6.5 6.5v9a6.5 6.5 0 1 0 13 0v-9A6.5 6.5 0 0 0 12 1zm0 2a4.5 4.5 0 0 1 4.5 4.5v9a4.5 4.5 0 1 1-9 0v-9A4.5 4.5 0 0 1 12 3z"/>
+                                <rect class="wheel" width="3" height="5" x="10.5" y="6" rx="1"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="scroll-msg">SCROLL TO EXPLORE</p>
+                </div>
+                <div class="chat">chatting</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
