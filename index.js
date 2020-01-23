@@ -443,7 +443,6 @@ var leftOptions= {
 
 var gsapLeftObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log(entry);
         if (entry.intersectionRatio > 0) {
             gsap.fromTo(entry.target, {
                 x: -120,
@@ -600,8 +599,6 @@ function querry(pixels,x){
             gsapRightObserver.observe(anime);
         });
         
-    }else{
-        console.log('not matching');
     }
 };
 var querry768 = new querry(768,70);
